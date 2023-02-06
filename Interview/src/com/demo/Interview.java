@@ -5,7 +5,30 @@ public class Interview {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Interview in = new Interview();
-		in.primeorNo();
+		//in.primeorNo();
+		//in.reverseNumber();
+		in.factorial(5);
+	}
+	private int factorial(int fact) {
+		int count=1;
+		while(0<fact) {
+			count=count*fact;
+			fact=fact-1;
+		}
+		System.out.println(count);
+		return count;
+	}
+
+	private void reverseNumber() {
+		// TODO Auto-generated method stub
+		int num = 2345;
+		while(0<num) {
+			int rem=num%10;
+			System.out.print(rem);		
+			num=num/10;
+		}
+		
+		//System.out.println();
 	}
 
 	private void primeorNo() {
