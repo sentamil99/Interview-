@@ -10,7 +10,33 @@ public class Interview {
 		//in.factorial(5);
 		//in.multiple3and5();
 		//in. multiple3or5();
-		in.divide100();
+		//in.divide100();
+		//in.countiof100();
+		in.addof_n_num();
+	}
+	private void addof_n_num() {
+		// TODO Auto-generated method stub
+		int start=1;
+		int end=10;
+		int total=0;
+		while(start<=end) {
+			total=total+start;
+			start=start+1;
+		}
+		System.out.println("addof_n_number:"+total);
+	}
+	private void countiof100() {
+		// TODO Auto-generated method stub
+		int num=100;
+		int div=2;
+		int count=0;
+		while(num>div) {
+			if(num%div==0) {
+				count=count+1;
+			}
+			div=div+1;
+		}
+		System.out.println("count of 100:"+count);
 	}
 	private void divide100() {
 		// TODO Auto-generated method stub
