@@ -12,7 +12,34 @@ public class Interview {
 		//in. multiple3or5();
 		//in.divide100();
 		//in.countiof100();
-		in.addof_n_num();
+		//in.addof_n_num();
+		//in.polinrome("amma");
+		 in.vowels("senthamil");
+		
+	}
+	private void vowels(String tr) {
+		// TODO Auto-generated method stub
+		for(int i=0;i<tr.length();i++) {
+			if(tr.charAt(i)=='a'||tr.charAt(i)=='e'||tr.charAt(i)=='i'||tr.charAt(i)=='o'||tr.charAt(i)=='u') {
+				System.out.println(tr.charAt(i));
+			}
+
+		}
+		
+	}
+	private void polinrome(String str) {
+		// TODO Auto-generated method stub
+		String name="";
+		for(int i=str.length()-1;i>=0;i--) {
+			//System.out.print(str.charAt(i));
+			name=name+str.charAt(i);
+		}
+		if(str.equals(name)){
+			System.out.println("polinrome");
+		}
+		else {
+			System.out.println("not polinrome");
+		}
 	}
 	private void addof_n_num() {
 		// TODO Auto-generated method stub
@@ -83,32 +110,34 @@ public class Interview {
 
 	private void reverseNumber() {
 		// TODO Auto-generated method stub
-		int num = 2345;
-		while(0<num) {
+		int num = 12345;//12345%10=1234.5=5
+		while(0<num) {//12345/10=1234.5=1234
 			int rem=num%10;
 			System.out.print(rem);		
 			num=num/10;
 		}
 		
-		//System.out.println();
+		System.out.println();
 	}
 
 	private void primeorNo() {
 		// TODO Auto-generated method stub
-		int number= 12 ;
-		int div =2;
+		int number=17;
+		int div=2;
 		int count=0;
-		while(number>div){
+		while(div<number) {
 			if(number%div==0) {
 				count=count+1;
-			}	
+			}
 			div=div+1;
 		}
-		if(count==0) {
-			System.out.println(number+" prime number");
+		if (count==0) {
+			System.out.println("prime number = 17");
 		}
-		else
-			System.out.println(number+" not prime number");
-	}
+		else {
+			System.out.println("not prime number = 17");
+		}
+	
+		}
 
 }
