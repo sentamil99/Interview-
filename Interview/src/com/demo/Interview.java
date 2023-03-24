@@ -14,7 +14,96 @@ public class Interview {
 		//in.countiof100();
 		//in.addof_n_num();
 		//in.polinrome("amma");
-		 in.vowels("senthamil");
+		//in.vowels("senthamil");
+		//in.fibonaci(25);
+		//in.swapping();
+		//in.swapping2();
+		//in.mergeArray();
+		int[] c= {1 ,3 ,5 ,7 ,9 ,8 ,6 ,4 };
+		in.ascending(c);
+		
+		
+	}
+	
+	private void mergeArray() {
+		// TODO Auto-generated method stub
+		int a[]= {1,3,5,7};
+		int b[]= {9,8,6,4};
+		int mrg=a.length+b.length;
+		int c[]= new int[mrg];
+		
+		for(int i=0;i<a.length;i++) {
+				c[i]=a[i];
+			
+		}
+		for(int i=0;i<b.length;i++) {
+			c[a.length+i]=b[i];
+		
+		}
+		for(int i=0;i<c.length;i++) {
+			System.out.print(c[i]+" ");
+		}
+		
+		
+	}
+	private void ascending(int[] c) {
+		// TODO Auto-generated method stub
+		System.out.print("befor sowaping");
+		for(int i=0;i<c.length;i++) {
+			System.out.print(c[i]+" ");
+		}
+		int temp ;
+		//int i=0;
+		for(int i=0;i<c.length;i++) {
+			for(int j=1;j<c.length;j++) {
+			if(c[j-1]>c[j]) {
+				temp=c[j-1];
+				c[j-1]=c[j];
+				c[j]=temp;
+			}
+		}
+		}
+		System.out.print("After swapping");
+		for(int i=0;i<c.length;i++) {
+			System.out.print(c[i]+" ");
+		}
+		
+		
+	}
+	private void swapping2() {
+		// TODO Auto-generated method stub
+		int a=10;
+		int b=20;
+		int c=30;
+		c=a;
+		b=a+b;
+		a=b-a;
+		
+		
+		System.out.println(a+"  "+b+"  "+c);
+		
+	}
+	private void swapping() {
+		// TODO Auto-generated method stub
+		int no1=25;
+		int no2=15;
+		no1=no1+no2;
+		no2=no1-no2;
+		no1=no1-no2;
+		System.out.println(no1+"..........."+no2);
+		
+	}
+	private static void fibonaci(int i) {
+		// TODO Auto-generated method stub
+		int first=0;
+		int second=1;
+		int third=0;
+		while(i>first) {
+			third=first+second;
+			first=second;
+			second=third;
+			System.out.println(first+" ");
+		}
 		
 	}
 	private void vowels(String tr) {
